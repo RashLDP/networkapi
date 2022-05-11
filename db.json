@@ -1,21 +1,69 @@
 {
-  "network": [
+  "instanceDetails": [
+     {
+      "id":"i-0b3db6cb7bebde704",
+      "cloudProvider":"aws",
+       "name": " aws-rnd",
+      "type":"t2.micro",
+      "vpcId":"vpc-88a252ee",
+      "subnetId":"subnet-747cd912",
+      "publicIpAddress":"52.221.237.104",
+      "privateIpAddress":"172.31.22.75",
+      "status":"running",
+      "launchTime":"2022-03-31T06:04:08.000Z",
+      "placement":{
+         "region":"ap-southeast-1",
+         "availabilityZone":"ap-southeast-1a"
+      },
+      "os":{
+         "ImageId":"ami-0801a1e12f4a9ccc0",
+         "platform":"Linux/UNIX",
+         "name":"amzn2-ami-kernel-5.10-hvm-2.0.20220316.0-x86_64-gp2",
+         "description":"Amazon Linux 2 Kernel 5.10 AMI 2.0.20220316.0 x86_64 HVM gp2",
+         "hypervisor":"xen",
+         "architecture":"x86_64"
+      }
+   },
     {
-      "id": 1,
-      "network": "Default",
-      "subNetwork": "Default",
-      "networkIP": "10.128.0.6",
-      "machineType": "ni-standard-1",
-      "keyName": "sinwind",
-      "availabilityZone": "us-central1-c",
-      "creationTime": "2020 Oct 11, 1:16PM",
-      "lastStartTimestamp": "2020 Oct 11, 1:16PM",
-      "lastStopTimestamp": "2020 Oct 11, 1:16PM",
-      "runInstance": "daily",
-      "startDate": "2021-10-09",
-      "startTime": "09:10",
-      "endDate": "2021-10-09",
-      "EndTime": "09:10"
-    }
+   "id":"crawler-rnd",
+   "cloudProvider":"azure",
+   "name":"crawler-rnd",
+   "type":"Standard_E4s_v3",
+   "vpcId":"crawler-rnd-vnet",
+   "subnetId":"default",
+   "publicIpAddress":"null",
+   "privateIpAddress":"10.3.0.4",
+   "status":"VM deallocated",
+   "launchTime":"2021-06-13T06:15:32.055Z",
+   "placement":{
+      "region":"centralus",
+      "resourceGroup":"CRAWLER-RND"
+   },
+   "os":{
+      "platform":"MicrosoftWindowsDesktop",
+      "name":"Windows-10"
+   }
+},
+{
+   "id":"crawler-ix1",
+   "cloudProvider":"azure",
+   "name":"crawler-ix1",
+   "type":"Standard_D4s_v3",
+   "vpcId":"CRAWLER-IX1-vnet",
+   "subnetId":"default",
+   "publicIpAddress":"20.97.9.2",
+   "privateIpAddress":"10.1.0.4",
+   "status":"VM running",
+   "launchTime":"2021-05-05T06:14:16.020Z",
+   "placement":{
+      "region":"southcentralus",
+      "resourceGroup":"CRAWLER-IX1"
+   },
+   "os":{
+      "platform":"MicrosoftWindowsDesktop",
+      "name":"Windows-10"
+   }
+}
+ 
   ]
 }
